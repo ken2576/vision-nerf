@@ -1,0 +1,12 @@
+expname = srn_cars
+ckptdir = [path to ckpt dir]
+ckpt_path = [path to ckpt dir]/[ckpt name]
+data_path = [path to shapenet cars data]
+outdir = [path to output]
+img_hw = [128, 128]
+chunk_size = 2048 # Increase this if you have large GPU memory
+mlp_block_num = 6
+white_bkgd = True
+im_feat_dim = 512
+skip = 1
+data_range = [0, 200] # Change this to render more data
