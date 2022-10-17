@@ -72,7 +72,7 @@ This code is based on [DPT](https://github.com/isl-org/DPT), [IBRNet](https://gi
 
 ## Citation
 ```
-@inproceedings {lin2022visionnerf,
+@inproceedings {lin2023visionnerf,
     booktitle = {WACV},
     title = {Vision Transformer for NeRF-Based View Synthesis from a Single Input Image},
     author = {Lin, Kai-En and Yen-Chen, Lin and Lai, Wei-Sheng and Lin, Tsung-Yi and Shih, Yi-Chang and Ramamoorthi, Ravi},
