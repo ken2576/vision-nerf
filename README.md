@@ -2,6 +2,10 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-2207.05736-b31b1b.svg)](https://arxiv.org/abs/2207.05736)
 
+![car_gif](./gifs/000687.gif)
+
+![chair_gif](./gifs/000931.gif)
+
 Official PyTorch Implementation of paper "Vision Transformer for NeRF-Based View Synthesis from a Single Input Image", WACV 2023.
 
 [Kai-En Lin](https://cseweb.ucsd.edu/~k2lin/)<sup>1*</sup>
@@ -17,7 +21,7 @@ Official PyTorch Implementation of paper "Vision Transformer for NeRF-Based View
 <sup>**</sup> Work done while at Google.
 
 
-[Project Page](https://cseweb.ucsd.edu/~viscomp/projects/VisionNeRF/) | [Paper](https://arxiv.org/abs/2207.05736) | [Pretrained models]()
+[Project Page](https://cseweb.ucsd.edu/~viscomp/projects/VisionNeRF/) | [Paper](https://arxiv.org/abs/2207.05736) | [Pretrained models](https://drive.google.com/drive/folders/1OAcwNPxBwaE8aY-0xrHreyP-EWmQYaYJ?usp=sharing)
 
 ## Requirements
 
@@ -37,13 +41,13 @@ conda activate visionnerf
 
 1. Clone the repository ```git clone https://github.com/ken2576/vision-nerf.git``` and download dataset from [PixelNeRF](https://github.com/sxyu/pixel-nerf#getting-the-data).
 
-2. Download [pretrained model weights]().
+2. Download [pretrained model weights](https://drive.google.com/drive/folders/1OAcwNPxBwaE8aY-0xrHreyP-EWmQYaYJ?usp=sharing).
 
     Here is a list of the model weights:
 
-    * `nmr.pth`: Our pretrained weights for the category-agnostic experiment.
-    * `srn_cars.pth`: Our pretrained weights for the category-specific experiment on ShapeNet Cars.
-    * `srn_chairs.pth`: Our pretrained weights for the category-specific experiment on ShapeNet Chairs.
+    * `nmr_500000.pth`: Our pretrained weights for the category-agnostic experiment.
+    * `srn_cars_500000.pth`: Our pretrained weights for the category-specific experiment on ShapeNet Cars.
+    * `srn_chairs_500000.pth`: Our pretrained weights for the category-specific experiment on ShapeNet Chairs.
 
 
 3. Install requirements ```conda env create -f environment.yml```.
@@ -52,7 +56,7 @@ conda activate visionnerf
 
 5. (Optional) Run training script with ```python train.py --config [config_path]```.
 
-6. Run inference script with our [pretrained models]():
+6. Run inference script with our [pretrained models](https://drive.google.com/drive/folders/1OAcwNPxBwaE8aY-0xrHreyP-EWmQYaYJ?usp=sharing):
 ```
 python eval.py --config [path to config file] # For ShapeNet Cars/Chairs
 python eval_nmr.py --config [path to config file] # For NMR
