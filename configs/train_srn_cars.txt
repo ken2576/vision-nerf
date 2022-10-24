@@ -1,7 +1,7 @@
 expname = srn_cars
 logdir = [path to log dir]
 ckptdir = [path to ckpt dir]
-data_path = [path to shapenet cars data]
+data_path = [path to shapenet cars data] # example: /home/ken/dataset/srn_cars/cars
 img_hw = [128, 128]
 N_rand = 512
 batch_size = 1

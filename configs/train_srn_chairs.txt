@@ -1,7 +1,7 @@
 expname = srn_chairs
 logdir = [path to log dir]
 ckptdir = [path to ckpt dir]
-data_path = [path to shapenet chairs data]
+data_path = [path to shapenet chairs data] # example: /home/ken/dataset/srn_chairs/chairs
 img_hw = [128, 128]
 N_rand = 512
 batch_size = 1
