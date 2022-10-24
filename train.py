@@ -39,7 +39,8 @@ import opt
 from utils import img2mse, mse2psnr, img_HWC2CHW, colorize, img2psnr, get_views
 
 
-# Fix numpy's duplicated RNG issue
+# Fix numpy's duplicated RNG issue and make the experiments reproducible
+# https://pytorch.org/docs/stable/notes/randomness.html#dataloader
 def workder_init_fn(worker_id):
     worker_seed = torch.initial_seed() % 2**32
     np.random.seed(worker_seed)

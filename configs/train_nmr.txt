@@ -17,7 +17,6 @@ lrate_mlp = 1e-4
 scheduler = steplr
 sample_mode = bbox_sample_full
 bbox_steps = 500000
-decoder_block_num = 2
 use_warmup = True
 warmup_steps = 10000
 lrate_decay_factor = 0.1

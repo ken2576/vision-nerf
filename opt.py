@@ -38,14 +38,11 @@ def config_parser():
     ## model options
     parser.add_argument('--im_feat_dim', type=int, default=256, help='image feature dimension')
     parser.add_argument('--mlp_feat_dim', type=int, default=512, help='mlp hidden dimension')
-    parser.add_argument('--patch_downscale', type=int, default=8, help='downscale factor to generate patches (e.g. 8 means 128/8 = 16 patches)')
-    parser.add_argument('--decoder_hidden_dim', type=int, default=128, help='decoder hidden dimension')
     parser.add_argument('--freq_num', type=int, default=10, help='how many frequency bases for positional encodings')
     parser.add_argument('--mlp_block_num', type=int, default=2, help='how many resnet blocks for coarse network')
     parser.add_argument('--coarse_only', action='store_true', help='use coarse network only')
     parser.add_argument("--anti_alias_pooling", type=int, default=1, help='if use anti-alias pooling')
     parser.add_argument('--num_source_views', type=int, default=1, help='number of views')
-    parser.add_argument('--decoder_block_num', type=int, default=2, help='how many blocks for decoder network')
     parser.add_argument('--freeze_pos_embed', action='store_true', help='freeze positional embeddings')
     parser.add_argument('--no_skip_conv', action='store_true', help='disable skip convolution')
 
