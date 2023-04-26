@@ -56,6 +56,10 @@ conda activate visionnerf
 
 5. (Optional) Run training script with ```python train.py --config [config_path]```.
 
+   The code also supports DDP and it can be run by
+   
+   ```python -m torch.distributed.launch --nproc_per_node=[#GPUs] train.py --config [config_path] --distributed```
+
 6. Run inference script with our [pretrained models](https://drive.google.com/drive/folders/1OAcwNPxBwaE8aY-0xrHreyP-EWmQYaYJ?usp=sharing):
 ```
 python eval.py --config [path to config file] # For ShapeNet Cars/Chairs
