@@ -21,7 +21,7 @@ Official PyTorch Implementation of paper "Vision Transformer for NeRF-Based View
 <sup>**</sup> Work done while at Google.
 
 
-[Project Page](https://cseweb.ucsd.edu/~viscomp/projects/VisionNeRF/) | [Paper](https://arxiv.org/abs/2207.05736) | [Pretrained models](https://drive.google.com/drive/folders/1OAcwNPxBwaE8aY-0xrHreyP-EWmQYaYJ?usp=sharing)
+[Project Page](https://cseweb.ucsd.edu/~viscomp/projects/VisionNeRF/) | [Paper](https://arxiv.org/abs/2207.05736) | [Pretrained models](https://drive.google.com/drive/folders/1ZnygwuNKPUdcTas28ZilzzqVC4JY_moZ?usp=sharing)
 
 ## Requirements
 
@@ -41,7 +41,7 @@ conda activate visionnerf
 
 1. Clone the repository ```git clone https://github.com/ken2576/vision-nerf.git``` and download dataset from [PixelNeRF](https://github.com/sxyu/pixel-nerf#getting-the-data).
 
-2. Download [pretrained model weights](https://drive.google.com/drive/folders/1OAcwNPxBwaE8aY-0xrHreyP-EWmQYaYJ?usp=sharing).
+2. Download [pretrained model weights](https://drive.google.com/drive/folders/1ZnygwuNKPUdcTas28ZilzzqVC4JY_moZ?usp=sharing).
 
     Here is a list of the model weights:
 
@@ -60,7 +60,7 @@ conda activate visionnerf
    
    ```python -m torch.distributed.launch --nproc_per_node=[#GPUs] train.py --config [config_path] --distributed```
 
-6. Run inference script with our [pretrained models](https://drive.google.com/drive/folders/1OAcwNPxBwaE8aY-0xrHreyP-EWmQYaYJ?usp=sharing):
+6. Run inference script with our [pretrained models](https://drive.google.com/drive/folders/1ZnygwuNKPUdcTas28ZilzzqVC4JY_moZ?usp=sharing):
 ```
 python eval.py --config [path to config file] # For ShapeNet Cars/Chairs
 python eval_nmr.py --config [path to config file] # For NMR
